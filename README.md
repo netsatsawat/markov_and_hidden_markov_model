@@ -1,5 +1,7 @@
 # Markov chains and hidden Markov models
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white) ![Notebooks: executed](https://img.shields.io/badge/notebooks-5%20executed-eb6834?logo=jupyter&logoColor=white) ![Runs offline](https://img.shields.io/badge/data-bundled%2C%20runs%20offline-1baf7a) ![Verified twice](https://img.shields.io/badge/every%20number-verified%20twice-8a5cf6)
+
 A five-notebook tutorial that starts from "what is a state?" and ends in
 places a first chapter on Markov chains never promises: the same matrix
 that prices a loan book also predicts how often a multi-step AI agent will
@@ -12,7 +14,7 @@ into plain words.
 
 ![Market regimes inferred by the HMM](pic/spy_regimes_hmm.png)
 
-## Why this repository exists
+## 🧭 Why this repository exists
 
 I first published this in 2020 as a single notebook. When I came back to it
 in 2026, half of it no longer ran: the price API it depended on had shut
@@ -36,7 +38,7 @@ concrete by reproducing the published numbers of my
 repository from a matrix inversion, and notebook 05 walks the same
 mathematics into a revenue meeting.
 
-## The notebooks, in reading order
+## 📚 The notebooks, in reading order
 
 Each one builds on the previous, and each ends on a real dataset or a real
 system rather than a toy.
@@ -91,7 +93,7 @@ cost, and a Monte Carlo checker) plus the `MarkovChain` class that draws
 the state diagrams. `tests/test_absorbing.py` covers the math against
 closed-form cases.
 
-## Where this applies in the real world
+## 💼 Where this applies in the real world
 
 Every notebook runs on illustrative or public data, but each one is a
 working template for a decision someone is paid to make. Swap in your
@@ -127,7 +129,7 @@ them) and the analysis carries over unchanged.
 
 ![The loan book as an absorbing chain](pic/loan_chain.png)
 
-## Running it yourself
+## 🚀 Running it yourself
 
 ```
 python -m venv .venv && source .venv/bin/activate
@@ -143,7 +145,7 @@ the results reproduce exactly as rendered. If you want a fresher snapshot,
 still fully open, and its docstring explains what happened to the two
 series from the 2020 version that no longer exist.
 
-## What changed since 2020
+## 🔁 What changed since 2020
 
 The original was one notebook with a loan example and an HMM fitted to GE
 stock prices. This revision splits it into the five-part sequence above,
