@@ -1,0 +1,9 @@
+# Python >= 3.9
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scikit-learn>=1.3
+hmmlearn>=0.3
+jupyter>=1.0
+# Only needed to rebuild data/market_macro.csv; the notebooks read the CSV.
+yfinance>=0.2
