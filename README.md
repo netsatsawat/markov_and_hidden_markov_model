@@ -1,9 +1,10 @@
 # Markov chains and hidden Markov models
 
-A four-notebook tutorial that starts from "what is a state?" and ends
-somewhere unexpected: the same matrix that prices a loan book also predicts
-how often a multi-step AI agent will finish its job. It is written for
-someone meeting this material for the first time. If you can read basic
+A five-notebook tutorial that starts from "what is a state?" and ends in
+places a first chapter on Markov chains never promises: the same matrix
+that prices a loan book also predicts how often a multi-step AI agent will
+finish its job, and what a customer retention program is worth in dollars.
+It is written for someone meeting this material for the first time. If you can read basic
 Python and you know what "a fair die shows a six one time in six" means, you
 have the prerequisites; the linear algebra (one matrix product, one inverse,
 one eigenvector) is introduced when it is needed and always translated back
@@ -29,10 +30,11 @@ training years.
 
 The rewrite also connects the material to my current work. I spend my days
 helping enterprises ship AI systems, and the most useful mental model I have
-for agent reliability is the absorbing Markov chain. The final notebook
-makes that concrete by reproducing the published numbers of my
+for agent reliability is the absorbing Markov chain. Notebook 04 makes that
+concrete by reproducing the published numbers of my
 [agent-failure-lab](https://github.com/netsatsawat/agent-failure-lab)
-repository from a matrix inversion.
+repository from a matrix inversion, and notebook 05 walks the same
+mathematics into a revenue meeting.
 
 ## The notebooks, in reading order
 
@@ -73,6 +75,16 @@ numbers of agent-failure-lab by assertion, then goes where closed forms
 cannot: where failing runs die, which step repays engineering effort ten
 times over, and what a fallback branch does to the arithmetic.
 
+**[05 · Customer lifetime value](notebooks/05_customer_lifetime_value.ipynb).**
+The business capstone. A subscriber base as a five-state chain: cohort
+retention curves, the attrition structure a single monthly rate averages
+away, and CLV as the fundamental matrix pricing customer-months. A
+retention program is priced end to end before launch (net \$39 per new
+customer, including the way the program inflates its own cost base), and
+four competing initiatives get one honest ranking, in which the engagement
+lever beats everything by an order of magnitude and the upsell push turns
+out to be worth almost exactly nothing.
+
 The `markov/` package holds the shared machinery: `AbsorbingChain`
 (canonical form, fundamental matrix, absorption probabilities, expected
 cost, and a Monte Carlo checker) plus the `MarkovChain` class that draws
@@ -100,11 +112,11 @@ series from the 2020 version that no longer exist.
 ## What changed since 2020
 
 The original was one notebook with a loan example and an HMM fitted to GE
-stock prices. This revision splits it into the four-part sequence above,
+stock prices. This revision splits it into the five-part sequence above,
 replaces the dead data sources with a bundled snapshot, adds the
 fundamental-matrix treatment the loan example had been circling without
 landing, makes the model-selection and out-of-sample honesty explicit, and
-adds the bridge to AI agents. The concepts are the same; the answers are
+adds the bridges to AI agents and to customer economics. The concepts are the same; the answers are
 now exact where they used to be approximate, and checked where they used to
 be asserted.
 
