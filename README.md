@@ -1,6 +1,22 @@
-# Markov chains and hidden Markov models
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="pic/banner-dark.png">
+    <img src="pic/banner-light.png" alt="Markov chains and hidden Markov models" width="100%">
+  </picture>
+</h1>
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white) ![Notebooks: executed](https://img.shields.io/badge/notebooks-5%20executed-eb6834?logo=jupyter&logoColor=white) ![Runs offline](https://img.shields.io/badge/data-bundled%2C%20runs%20offline-1baf7a) ![Verified twice](https://img.shields.io/badge/every%20number-verified%20twice-8a5cf6)
+<p align="center">
+  <a href="#-the-notebooks-in-reading-order">Notebooks</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#-where-this-applies-in-the-real-world">Real-world uses</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#-running-it-yourself">Run it</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://satsawat.ai/#newsletter">Newsletter</a>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License: MIT"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+"></a>
+  <a href="notebooks/"><img src="https://img.shields.io/badge/notebooks-5%20executed-eb6834?style=for-the-badge&logo=jupyter&logoColor=white" alt="Notebooks: 5, executed"></a>
+  <img src="https://img.shields.io/badge/data-bundled%2C%20runs%20offline-1baf7a?style=for-the-badge" alt="Runs offline">
+  <img src="https://img.shields.io/badge/every%20number-verified%20twice-8a5cf6?style=for-the-badge" alt="Every number verified twice">
+  <a href="https://satsawat.ai"><img src="https://img.shields.io/badge/author-satsawat.ai-e8a112?style=for-the-badge" alt="Author: satsawat.ai"></a>
+</p>
 
 A five-notebook tutorial that starts from "what is a state?" and ends in
 places a first chapter on Markov chains never promises: the same matrix
