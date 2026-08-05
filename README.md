@@ -91,6 +91,40 @@ cost, and a Monte Carlo checker) plus the `MarkovChain` class that draws
 the state diagrams. `tests/test_absorbing.py` covers the math against
 closed-form cases.
 
+## Where this applies in the real world
+
+Every notebook runs on illustrative or public data, but each one is a
+working template for a decision someone is paid to make. Swap in your
+own transition counts (any CRM, loan book, or run log already contains
+them) and the analysis carries over unchanged.
+
+- **Credit and collections.** Banks maintain migration matrices exactly
+  like notebook 02's, and the fundamental matrix turns them into
+  expected default rates, time on book, and lifetime servicing cost per
+  loan, the raw ingredients of provisioning and pricing. Stress testing
+  is a matrix edit: fatten the default column and re-read the book.
+- **Subscription economics.** Notebook 05 is the meeting where a
+  retention program gets funded or killed: CLV per segment, the dollar
+  value of one point of churn moved anywhere in the lifecycle, and a
+  program's net value computed before launch. CLV is also the ceiling
+  on what acquisition is allowed to cost, so the same number disciplines
+  marketing spend. The states fit any recurring business: telco
+  subscribers, SaaS seats, streaming accounts, insurance policies.
+- **AI agent reliability.** Notebook 04's chain is how I reason about
+  LLM pipelines in production: what an SLA is worth, whether retry or
+  verification pays for itself, and which step deserves the fine-tuning
+  budget. The live-model half of that argument is in
+  [agent-failure-lab](https://github.com/netsatsawat/agent-failure-lab).
+- **Market and macro monitoring.** Notebook 03's regime machinery
+  supports risk dashboards and regime-conditional limits, and its
+  out-of-sample failure is the more valuable export: a worked example of
+  why any deployed unsupervised model needs drift monitoring and a
+  refit schedule.
+- **Anything with a terminal state.** Employee attrition, predictive
+  maintenance (machine states ending in failure), clinical trial
+  dropout, sales funnels ending in won or lost: the same five lines of
+  linear algebra price them all.
+
 ![The loan book as an absorbing chain](pic/loan_chain.png)
 
 ## Running it yourself
